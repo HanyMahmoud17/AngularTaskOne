@@ -1,0 +1,14 @@
+<div class="container">
+<div class="row gap-1">
+<div class="card col-5"  *ngFor="let item of showProduct">
+  <!-- <img src="{{'' | img :'../../assets/img/vfvfvfvfvf.png'}}" alt="" style="width: 500px;height: 500px;"> -->
+  <div class="card-body">
+    <img src="{{item.imgURL | img :'../../assets/img/vfvfvfvfvf.png'}} " class="card-img-top" alt="...">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.price}}</p>
+      <p class="card-text">{{item.quantity}}</p>
+      <a href="#" class="btn btn-primary" (click)="add(item)">Go somewhere</a>
+    </div>
+  </div>
+</div>
+</div>
